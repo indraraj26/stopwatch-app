@@ -1,13 +1,15 @@
 import Stopwatch from "./components/Stopwatch/Stopwatch";
 import Header from "./components/Header/Header";
 
-import "./App.css";
+import classes from "./App.module.css";
 
 function App() {
   return (
     <>
       <Header />
-      <Stopwatch />
+      <div className={classes.container}>
+        <Stopwatch />
+      </div>
     </>
   );
 }
